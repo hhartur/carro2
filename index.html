@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Herança em JavaScript</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      color: #0056b3;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .vehicle-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      padding: 20px;
+      width: 400px;
+      text-align: left;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .vehicle-container:hover {
+      transform: scale(1.05);
+    }
+
+    p {
+      margin: 5px 0;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 6px;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    input[type="number"] {
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin: 5px 0;
+      width: 80px;
+    }
+
+    label {
+      margin-right: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Carro Esportivo</h1>
+  <div class="car-image"><img src="bugatti.png" alt="" style="width: 200px;"></div>
+  <p>Modelo: <span id="modeloEsportivo"></span></p>
+  <p>Cor: <span id="corEsportivo"></span></p>
+  <p>Ligado: <span id="ligadoEsportivo"></span></p>
+  <p>Velocidade: <span id="velocidadeEsportivo"></span></p>
+  <p>Turbo: <span id="turboStatus">Desligado</span></p>
+
+  <button id="ligarEsportivo">Ligar</button>
+  <button id="desligarEsportivo">Desligar</button>
+  <button id="acelerarEsportivo">Acelerar</button>
+  <button id="frearEsportivo">Frear</button>
+  <button id="ativarTurbo">Ativar Turbo</button>
+  <button id="desativarTurbo">Desativar Turbo</button>
+
+  <h1>Caminhão</h1>
+  <div class="car-image"><img src="caminhao.png" alt="" style="width: 200px;"></div>
+  <p>Modelo: <span id="modeloCaminhao"></span></p>
+  <p>Cor: <span id="corCaminhao"></span></p>
+  <p>Ligado: <span id="ligadoCaminhao"></span></p>
+  <p>Velocidade: <span id="velocidadeCaminhao"></span></p>
+  <p>Capacidade de Carga: <span id="capacidadeCarga"></span> kg</p>
+  <p>Carga Atual: <span id="cargaAtual">0</span> kg</p>
+
+  <label for="carga">Carga (kg):</label>
+  <input type="number" id="carga" value="0">
+  <button id="carregar">Carregar</button>
+
+  <button id="ligarCaminhao">Ligar</button>
+  <button id="desligarCaminhao">Desligar</button>
+  <button id="acelerarCaminhao">Acelerar</button>
+  <button id="frearCaminhao">Frear</button>
+  <button id="buzinarCaminhao">Buzinar</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
